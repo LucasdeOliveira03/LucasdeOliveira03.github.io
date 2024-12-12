@@ -72,6 +72,22 @@ body {
 	font-size: 2.693vw;
 }
 
+@media (max-width: 600px) {
+	.title {
+		font-family: 'Poiret One', cursive;
+		margin-bottom: .5rem;
+		font-size: 9vw;
+	}
+	
+	.sub-title {
+		border-top: .1rem solid #fff;
+		padding: 1rem 4rem;
+		text-align: center;
+		font-size: 6vw;
+	}
+	
+}
+
 /*Contact me page*/
 
 .Contact {
@@ -99,3 +115,33 @@ body {
     font-size: 3vw;
     line-height: 5vw;
 }
+
+.Social-media a :hover{
+    color: #d1d1d1;
+	font-size: 3.2vw;
+}
+
+@media (max-width: 600px) {
+	.Contact {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.Contact-text {
+		width: 50vw;
+	}
+
+	.Contact-me {
+		font-family: 'Poiret One', cursive;
+		font-size: 8vw;
+		margin-bottom: .5rem;
+	}
+
+	.Social-media{
+		font-size-adjust: 2;
+	}
+	
+}
+
