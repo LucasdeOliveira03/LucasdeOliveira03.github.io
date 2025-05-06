@@ -35,12 +35,13 @@ body {
     text-decoration: none;
     font-size: 17px;
 	line-height: 40px; 
+	transition: 0.2s;
 }
 
 .TopNav a:hover{
     color: #d1d1d1;
 	font-size: 18px;
-	padding: 13px 15px;
+	padding: 12.5px 14.5px;
 }
 
 .main {
@@ -61,7 +62,7 @@ body {
 
 .title {
 	font-family: 'Poiret One', cursive;
-	font-size: 5vw;
+	font-size: 4vw;
     margin-bottom: .5rem;
 }
 
@@ -69,7 +70,7 @@ body {
     border-top: .1rem solid #fff;
     padding: 1rem 4rem;
 	text-align: center;
-	font-size: 2.693vw;
+	font-size: 1.693vw;
 }
 
 @media (max-width: 600px) {
@@ -112,13 +113,13 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 3vw;
-    line-height: 5vw;
+    font-size: 2vw;
+    line-height: 4vw;
 }
 
 .Social-media a :hover{
     color: #d1d1d1;
-	font-size: 3.2vw;
+	font-size: 2.2vw;
 }
 
 @media (max-width: 600px) {
@@ -130,12 +131,12 @@ body {
 	}
 	
 	.Contact-text {
-		width: 50vw;
+		width: 45vw;
 	}
 
 	.Contact-me {
 		font-family: 'Poiret One', cursive;
-		font-size: 8vw;
+		font-size: 7vw;
 		margin-bottom: .5rem;
 	}
 
@@ -145,3 +146,103 @@ body {
 	
 }
 
+/* Project Section */
+.Project {
+	padding: 2rem;
+	margin: auto;
+  }
+  
+  .Project .title {
+	font-size: 2.6rem;
+	margin-bottom: 0.5rem;
+	font-family: 'Poiret One', cursive;
+  }
+  
+  .Project .subtitle {
+	margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  
+  .project-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 1.5rem;
+	width: 73vw;
+  }
+  
+  .project-card {
+	background: #fff;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+	display: flex;
+	flex-direction: row;
+	transition: transform 0.2s ease;
+	flex-wrap: wrap;
+  }
+  
+  .project-card:hover {
+	transform: translateY(-5px);
+  }
+  
+  .project-card img {
+	width: 100%;
+	height: 180px;
+	object-fit: contain;
+  }
+  
+  .card-body {
+	padding: 1rem;
+  }
+  
+  .card-body h2 {
+	font-size: 1.3rem;
+	margin: 0 0 0.5rem;
+	color: #383838;
+  }
+  
+  .card-body p {
+	font-size: 0.95rem;
+	color: #444;
+	margin-bottom: 1rem;
+  }
+  
+  .tech {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+	margin-bottom: 1rem;
+  }
+  
+  .tech span {
+	background: #eee;
+	padding: 0.3rem 0.6rem;
+	border-radius: 5px;
+	font-size: 0.8rem;
+	color: #444;
+  }
+  
+  .buttons a {
+	text-decoration: none;
+	background: #007acc;
+	color: white;
+	padding: 0.5rem 1rem;
+	border-radius: 6px;
+	font-size: 0.85rem;
+	margin-right: 0.5rem;
+	transition: background 0.2s;
+  }
+  
+  .buttons a:hover {
+	background: #005fa3;
+  }
+
+@media (max-width: 800px) {
+	.project-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1.5rem;
+		width: 73vw;
+	}
+}
