@@ -239,6 +239,9 @@ body {
 	background: #005fa3;
   }
 
+  ::-webkit-scrollbar {
+  width: 0px;
+}
 @media (max-width: 800px) {
 	.project-grid {
 		display: grid;
