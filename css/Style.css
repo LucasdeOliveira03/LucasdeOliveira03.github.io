@@ -246,3 +246,62 @@ body {
 		width: 73vw;
 	}
 }
+
+@media (max-width: 700px) {
+	.main {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	overflow: scroll;
+	justify-content: center;
+	align-items: center;
+	}
+	.project-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1.5rem;
+		width: 73vw;
+	}
+
+	.project-card img {
+		width: 100%;
+		height: 100px;
+		object-fit: contain;
+	}
+
+	.card-body h2 {
+		font-size: 1rem;
+		margin: 0 0 0.5rem;
+		color: #383838;
+	}
+
+	.card-body p {
+		font-size: 0.85rem;
+		color: #444;
+		margin-bottom: 0.5rem;
+	}
+
+	.Project .title {
+		font-size: 2.2rem;
+		margin-bottom: 0.5rem;
+		font-family: 'Poiret One', cursive;
+	}
+
+	.Project .subtitle {
+		margin-bottom: 1.6rem;
+		font-weight: bold;
+		font-size: 1.1rem;
+	}
+
+	.buttons a {
+		text-decoration: none;
+		background: #007acc;
+		color: white;
+		padding: 0.5rem 1rem;
+		border-radius: 6px;
+		font-size: 0.8rem;
+		margin-right: 0.5rem;
+		transition: background 0.2s;
+	}
+}
