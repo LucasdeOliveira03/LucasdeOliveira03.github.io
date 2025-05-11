@@ -51,6 +51,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	overflow: scroll;
 }
 
 .home {
@@ -247,19 +248,18 @@ body {
 	}
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
 	.main {
 	position: absolute;
 	height: 100%;
 	width: 100%;
 	display: flex;
-	overflow: scroll;
 	justify-content: center;
 	align-items: center;
 	}
 	.project-grid {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 		gap: 1.5rem;
 		width: 73vw;
 	}
